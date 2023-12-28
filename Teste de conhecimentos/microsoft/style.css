@@ -1,0 +1,52 @@
+@charset "UTF-8";
+@font-face {
+    font-family:'bebas';
+    src: url(bebas/BebasNeue-Regular.otf) format(opentype);
+}
+@font-face {
+    font-family:'android';
+    src: url(idroid.otf);
+}
+
+header{
+    background-color: #62eeec;
+    text-align: center;
+    padding:10px;
+    margin:-10px;
+    }
+    header > h1{
+        font-family: 'bebas';
+    }
+    header > p{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.5em;
+    }
+body{
+   background-color:#CCE51E ; 
+}
+img#fundadores{
+    margin-left: 90px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+div{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    font-size: 1.3em;
+    background-color: #f09680;
+    margin: 10px 250px;
+    padding:10px;
+    margin: circle 25px;
+    min-width:300px;
+    max-width:1000px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    
+}
+div p{
+    text-indent: 1em;
+}
+div h2{
+    color:#e0596b;
+    font-family: 'android';
+}

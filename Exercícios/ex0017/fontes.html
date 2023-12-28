@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes baixadas com o google fonts</title>
+    <style>
+        /*
+        tipos de format()
+        - opentype(otf)
+        - truetype(ttf)
+        - embedded -opentype
+        - truetype-aat (Apple Advanced Typography)
+        - svg
+        para adicionar uma fonte baixada, basta colocar a regra "@font-face" e no locar "url" deve-se colocar a localicação da do arquivo na pasta, posteriormente especificar o formato e em "font-family" colocar um nome para a fonte dentro do arquivo. Depois disso, só colocar a fonte no seletor que desejar.
+        
+        
+        */
+        @font-face {
+            font-family:pacifico;
+            src: url(fonte1/pacifico.ttf) format(truetype);
+        }
+       body{
+        font-family: Arial, Helvetica, sans-serif;
+       }
+
+       p{
+        font-family:pacifico;
+       }
+    </style>
+</head>
+<body>
+    <h1>Título</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore magnam pariatur alias incidunt enim doloremque hic consequatur neque quam? Cumque inventore reprehenderit odit repellendus dicta recusandae laborum, quaerat enim pariatur.</p>
+</body>
+</html>

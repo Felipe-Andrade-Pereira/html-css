@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos em HTML5</title>
+</head>
+<body>
+    <h1>Inserindo videos hospedados localmente</h1>
+    <p>Este video está video está hospedado localmente em meu servidor</p>
+    <video src="video de cachoeira.mp4" width="500" controls loop></video>
+    <!--é preciso se atentar nos formatos dos videos, pois não são todos os navergadores que rodam todos os formatos de video-->
+    <p>Outra maneira de subir um video para o site: </p>
+    <video width="500" height="500" controls loop>
+        <source src="video de fogueira.mp4" type="video/mp4">
+
+    </video>
+    <h1>Inserindo videos do YouTube</h1> <!--basta ir em compartilhar/partilhar, clicar em <> e copiar o código-->
+    <!--é muito mais recomendado usar o youtube que ja é um hóspede de videos do que usar o video em meu servidor (o site fica muito mais leve)-->
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/FuifUlNbG-s?si=PCVzJ7NQ5pOU0GmH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+</body>
+</html>

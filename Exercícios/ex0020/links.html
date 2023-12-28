@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <!--os pseudo-elementos fazem as alterações locais, por exemplo: direto no link. é representado por ::-->
+    <!--
+        # = id
+        . = class
+        : = peseudo-class
+        :: = peseudo-element
+        > = filho
+    -->
+    <style>
+        body{
+            background-color: brown;
+        }
+        
+        a{
+            text-decoration: none; /*tira o sublinado das palavras*/
+        }
+        a:visited{ /*outra pseudo-classe. essa modifica os links que já foram visitados*/
+            color:aliceblue;
+        }
+        a:hover{
+            color:red;
+            text-decoration: underline; /*vai sublinhar o texto*/
+        }
+        a:active{ /*ativa qnd o link é clicado*/
+            color:yellow;
+        }
+        .especial::after{
+            content:' ☚ '
+        }
+        .especial::before{
+            content: ' ☛ '
+        }
+    </style>
+</head>
+<body>
+    <ul>
+    <li><a href="https://github.com/Felipe-Andrade-Pereira/Projetos_felipe/tree/master" class="especial" target=_blank >GitHub</a></li>
+    <li><a href="https://www.youtube.com"  target=_blank >youtube</a></li>
+    <li><a href="https://www.cursoemvideo.com" class="especial" target=_blank >CursoEmVideo</a></li>
+    </ul>
+</body>
+</html>

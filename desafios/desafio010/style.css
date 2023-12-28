@@ -1,0 +1,56 @@
+@charset "UTF-8";
+@font-face {
+    font-family: fonte_android;
+    src: url(fontes/idroid.otf) format(opentype);
+}
+
+
+header{
+    
+    font-family: Arial, Helvetica, sans-serif;
+    background-image:linear-gradient(to bottom, green, rgb(72, 131, 72));
+    color:white;
+    text-align: center;
+}
+header > nav{
+    text-align: left;
+    font-weight: bold;
+}
+
+div#principal{
+    background-color: white;
+    margin: -20px 250px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+body{
+    background-color:rgb(94, 131, 94);
+}
+div#principal > h1{
+    font-family: 'fonte_android';
+    color: green
+}
+div#principal > h2{
+    font-family: 'fonte_android';
+    background-image:linear-gradient(to right, rgb(191, 228, 191), rgb(218, 228, 218), white);
+    color: green;
+    
+}
+#bugdroid{
+    margin:0 0 0 200px;
+}
+div#video{
+    background-color: green;
+    text-align: center;
+}
+h3{
+    background-color:rgb(69, 134, 69) ;
+    height: 30px;
+    color:white;
+    margin: 10px 10px 0 10px;
+}
+#texto_final{
+    background-color:rgb(151, 202, 151);
+    margin: 0 10px 0px 10px; 
+    margin: circle 20px;
+}
