@@ -1,12 +1,29 @@
 @charset "UTF-8";
+@font-face {
+    font-family:passion;
+    src: url(../fontes/passion.ttf) format(truetype);
+}
+@font-face {
+    font-family:letra_de_mao;
+    src: url(../fontes/Sriracha/Sriracha-Regular.ttf) format(truetype);
+}
+
+:root{  /*criação de variaveis*/
+    --fonte1:Verdana, Geneva, Tahoma, sans-serif;
+    
+}
 
 *{
     margin:0px;
     padding: 0px;
+    font-size:1em;
+    
+     
 }
 html, body{
     min-height: 100vh;
     background-color: darkgray;
+    font-family: var(--fonte1);
 }
 header{
     background-color:black;
@@ -17,6 +34,8 @@ header{
 header > h1{
     padding-top:50px;
     font-variant: small-caps; /*deixa todas as letras das palavras em maiúsculas, e a letra que inicia a palavra maior que todas as outras*/
+    font-family:passion;
+    font-size: 10vh;
 }
 header > p{
     padding-bottom: 50px;
@@ -30,22 +49,27 @@ a:hover{
     text-decoration:underline;
 }
 section{ /*neste caso, a section irá valer para a 'section normal' e a 'section imagem'*/
+    font-family:passion;
     padding-top: 10vh; /*nesta medida, a sessão ocupará 10% da tela*/
     padding-bottom: 10vh;
     line-height: 2em; /*distância entre a linha de cima e a linha de baixo*/
     padding-left: 30px;
+    font-family: letra_de_mao;
+    font-size: 3.5vw;
 
 }
 section.normal{
     background-color: white;
     color:black;
+    
 }
 section.imagem{
     background-color: blue;
     color:white;
 }
 section.imagem > p{
-    width: 400px;
+    display: inline-block;
+    padding: 5px;
     background-color:rgba(0, 0, 0, 0.253);
 }
 footer{
