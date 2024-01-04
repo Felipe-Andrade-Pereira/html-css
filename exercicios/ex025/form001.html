@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Meu primeiro formulário</h1>
+    <form action="cadastro.php"  autocomplete="off"> <!--autocomplete=off é o argumento que desliga as caixas de sugestões de nomes nos campos-->
+        <p><label for="inome">Nome:</label>  <!--a tag label faz com que o nome e o campo de cadastro =sejam interligados-->
+            <input type="text" name="nome" id="inome"></p>
+        <p><label for="isobrenome">Sobrenome:</label> 
+            <input type="text" name="sobrenome" id="isobrenome"></p>
+        <input type="submit" value="Enviar">
+    </form>
+
+
+
+</body>
+</html>
