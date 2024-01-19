@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="post">
+        <p>
+            <label for="inome">Nome:</label>
+            <input type="text" name="nome" id="inome" placeholder="Digite o nome completo">
+        </p>
+
+        <p>
+            <label for="iidade">Idade</label>
+            <input type="number" name="idade" id="iidade">
+        </p>
+
+        <fieldset>
+            <legend>Esportes favoritos</legend>
+            <p>
+                
+                <input type="checkbox" name="fut" id="ifut" checked> <strong><label for="ifut">Futebol</label></strong> <br>
+                <input type="checkbox" name="vol" id="ivol"> <label for="ivol">Volêi</label> <br>
+                <input type="checkbox" name="ten" id="iten"> <label for="iten">Tênnis</label> <br>
+                <input type="checkbox" name="bas" id="ibas"> <label for="ibas">Basquete</label> <br>
+            </p>
+        </fieldset>
+
+        <p>
+            <input type="radio" name="sex" id="imas">Masculino
+            <input type="radio" name="sex" value="fem">Feminino
+        </p>
+
+        <p>
+            <input type="range" name="sas" id="isas" min="0" max="50" value="5" oninput="isas.innerHTML = Number(inum.value)">
+            <output value="isas">0</output>
+        </p>
+
+
+    </form>
+</body>
+</html>
