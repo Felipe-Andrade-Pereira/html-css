@@ -3,41 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Teste de formulário</title>
 </head>
 <body>
     <form action="" method="post">
-        <p>
-            <label for="inome">Nome:</label>
-            <input type="text" name="nome" id="inome" placeholder="Digite o nome completo">
-        </p>
 
         <p>
-            <label for="iidade">Idade</label>
-            <input type="number" name="idade" id="iidade">
+            <label for="inome">Nome: </label>
+            <input type="text" name="nome" id="inome">
+        </p>
+        <p>
+            <label for="iidade">Idade: </label>
+            <input type="number" name="idade" id="iidade" min="0" max="99" step="2">
         </p>
 
         <fieldset>
-            <legend>Esportes favoritos</legend>
+            <legend>Sexo</legend>
+            <P>
+                <input type="radio" name="sex" id="imas"><label for="imas">Masculino</label>
+                <input type="radio" name="sex" id="ifem"><label for="ifem">Feminino</label>
+            </P>
+        </fieldset>
+        <fieldset>
+            <legend>Esportes preferidos</legend>
             <p>
-                
-                <input type="checkbox" name="fut" id="ifut" checked> <strong><label for="ifut">Futebol</label></strong> <br>
-                <input type="checkbox" name="vol" id="ivol"> <label for="ivol">Volêi</label> <br>
-                <input type="checkbox" name="ten" id="iten"> <label for="iten">Tênnis</label> <br>
-                <input type="checkbox" name="bas" id="ibas"> <label for="ibas">Basquete</label> <br>
+                <input type="checkbox" name="fut" id="ifut"><label for="ifut">Futebol</label><br>
+                <input type="checkbox" name="bas" id="ibas"><label for="ibas">Basquete</label><br>
+                <input type="checkbox" name="ten" id="iten"><label for="iten">Tenis</label><br>
+                <input type="checkbox" name="vol" id="ivol"><label for="ivol">Volêi</label><br>
+                <input type="checkbox" name="han" id="ihan"><label for="ihan">Handebol</label><br>
             </p>
         </fieldset>
 
-        <p>
-            <input type="radio" name="sex" id="imas">Masculino
-            <input type="radio" name="sex" value="fem">Feminino
-        </p>
+        <fieldset>
+            <legend>Estados do Brasil</legend>
 
-        <p>
-            <input type="range" name="sas" id="isas" min="0" max="50" value="5" oninput="isas.innerHTML = Number(inum.value)">
-            <output value="isas">0</output>
-        </p>
+            <select name="estado" id="iestado">
+                <optgroup label="Sudeste">
+                    <option value="sp">São Paulo</option>
+                    <option value="mg">Minas Gerais</option>
+                    <option value="rj">Rio de Janeiro</option>
+                </optgroup>
 
+                <optgroup label="Nordeste">
+                    <option value="ba">Bahia</option>
+                    <option value="rn">Rio grande do Norte</option>
+                    <option value="ap">Amapá</option>
+                </optgroup>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Calculadora</legend>
+            <p>
+                <label for="n1">Digite um número: </label>
+                <input type="number" name="n1" id="in1" min="0" max="99" oninput="ires.innerHTML = Number(in1.value) + Number(in2.value)">
+            </p>
+
+            <p>
+                <label for="n2">Digite outro número</label>
+                <input type="number" name="n2" id="in2" min="0" max="99" oninput="ires.innerHTML = Number(in1.value) + Number(in2.value)">
+            </p>
+
+            <p>
+                <label for="res">Resultado da soma: </label>
+                <output name="res" id="ires">0</output>
+            </p>
+            <p>
+                <input type="submit" value="Calcular">
+                <input type="reset" value="Limpar">
+            </p>
+        </fieldset>
 
     </form>
 </body>
