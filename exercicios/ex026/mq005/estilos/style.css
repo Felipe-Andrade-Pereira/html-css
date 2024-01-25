@@ -9,13 +9,13 @@ body, html{
     background-color: lightgrey;
 } 
 header{
-    background-color: rgb(168, 166, 166);
+    background-color: gray;
 }
 header > h1{
     padding: 10px;
     text-align: center;
 }
-i.burguer{
+span#burguer{
     background-color: rgb(48, 48, 48);
     color:white;
     display:block;
@@ -23,7 +23,7 @@ i.burguer{
     padding: 10px;
     cursor: pointer; /*ao passar o mouse , a seta irá virar uma mão apontando*/
 }
-i.burguer:hover{
+span#burguer:hover{
     background-color: white;
     color: black;
 }
